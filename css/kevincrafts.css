@@ -6,7 +6,7 @@ body { height: 100%; position: relative; font-family: "Roboto", "Helvetica Neue"
 
 .element-invisible { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; }
 
-.centered { position: fixed; top: 50%; left: 50%; /* bring your own prefixes */ transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); background-color: #fff; -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); padding: 30px; }
+.centered { position: fixed; top: 50%; left: 50%; /* bring your own prefixes */ transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); background-color: #fff; -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; padding: 30px; }
 
 @media screen and (min-width: 600px) { padding: 60px; }
 .background-photo { background-image: url(https://unsplash.it/1500/1500?random); background-repeat: no-repeat; background-position: center center; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }

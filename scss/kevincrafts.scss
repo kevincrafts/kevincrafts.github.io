@@ -4,6 +4,15 @@
   box-shadow:         $x $y $blur rgba($rgb, $transparency);
 }
 
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  // keeps background from busting out of border
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 html {
   box-sizing: border-box;
   height:100%;
@@ -40,6 +49,7 @@ body {
   -moz-transform: translate(-50%, -50%);
   background-color: #fff;
   @include rgbashadow(0, 0, 40px, #000, .25);
+  @include rounded(2px);
   
   padding:30px;
 }
