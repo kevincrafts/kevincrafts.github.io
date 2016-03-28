@@ -54,7 +54,9 @@ body {
   padding:30px;
 }
 @media screen and (min-width:600px) {
-  padding: 60px;
+  .centered {
+    padding: 60px;
+  }
 }
 
 
@@ -72,6 +74,15 @@ body {
   z-index: -1;
 }
 
+
+img.profile-image {
+  display: block;
+  width:100%;
+  height: auto;
+  margin:0 auto;
+  max-width:240px;
+  @include rounded(50%);
+}
 /* TEXT */
 
 h1 {
