@@ -41,7 +41,10 @@ body {
   background-color: #fff;
   @include rgbashadow(0, 0, 40px, #000, .25);
   
-  padding:60px;
+  padding:30px;
+}
+@media screen and (min-width:600px) {
+  padding: 60px;
 }
 
 
@@ -64,6 +67,12 @@ body {
 h1 {
   font-weight: 900;
   text-align: center;
+  font-size: 24px;
+}
+@media screen and (min-width:480px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 h2.slogan {
   font-size: 14px;
@@ -71,12 +80,17 @@ h2.slogan {
 }
 @media screen and (min-width:640px) {
   h2.slogan {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 /* SOCIAL */
-.social {
-  h2 {
+@media screen and (min-width: 480px) {
+  .social h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .social h2 {
     font-size: 64px;
   }
 }
