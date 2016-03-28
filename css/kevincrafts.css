@@ -2,15 +2,14 @@ html { box-sizing: border-box; height: 100%; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-body { height: 100%; position: relative; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { height: 100%; position: relative; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #222; }
 
 .element-invisible { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; }
 
-.content-wrapper { height: 100%; align-items: center; display: flex; justify-content: center; }
+.content-wrapper { padding: 60px 20px; }
 
-.centered { max-width: 640px; margin: 40px; background-color: #fff; -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; padding: 30px; overflow-y: scroll; overflow-x: hidden; }
+.centered { max-width: 640px; margin: 0 auto; background-color: #fff; -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; padding: 30px; overflow-y: scroll; overflow-x: hidden; }
 
-@media screen and (min-width: 600px) { .centered { padding: 60px; } }
 .background-photo { background-image: url(https://unsplash.it/1500/1500?random); background-repeat: no-repeat; background-position: center center; background-size: cover; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
 
 img.profile-image { display: block; width: 100%; height: auto; margin: 0 auto; max-width: 240px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; }
