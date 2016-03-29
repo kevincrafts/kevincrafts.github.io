@@ -64,7 +64,7 @@ body {
 
 
 .background-photo {
-  background-image: url(https://unsplash.it/1500/1500?random);
+  background-image: url(https://unsplash.it/480/480?random);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -76,7 +76,26 @@ body {
   height: 100%;
   z-index: -1;
 }
-
+@media screen and (min-width:480px) {
+  .background-photo {
+    background-image: url(https://unsplash.it/750/750?random);
+  }
+}
+@media screen and (min-width:750px) {
+  .background-photo {
+    background-image: url(https://unsplash.it/1000/1000?random);
+  }
+}
+@media screen and (min-width:1000px) {
+  .background-photo {
+    background-image: url(https://unsplash.it/1200/1000?random);
+  }
+}
+@media screen and (min-width:1200px) {
+  .background-photo {
+    background-image: url(https://unsplash.it/1500/1500?random);
+  }
+}
 
 img.profile-image {
   display: block;
