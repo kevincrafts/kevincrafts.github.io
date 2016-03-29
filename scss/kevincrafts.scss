@@ -24,11 +24,17 @@ html {
 body {
   height:100%;
   position: relative;
-  
+
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color:#222;
 }
-
+a:link,
+a:visited {
+  transition: color 0.5s ease;
+}
+a:hover {
+  color: #DC5249;
+}
 
 .element-invisible {
   border: 0;
@@ -40,15 +46,15 @@ body {
 
 }
 .content-wrapper {
-  padding:20px; 
+  padding:20px;
 }
 @media screen and (min-width:768px) {
   .content-wrapper {
-    padding:60px; 
+    padding:60px;
   }
 }
 .centered {
-  
+
   max-width:640px;
   margin:0 auto;
   background-color: #fff;
@@ -68,7 +74,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  
+
   position: fixed;
   top:0;
   left:0;
@@ -104,6 +110,10 @@ img.profile-image {
   margin:0 auto;
   max-width:180px;
   @include rounded(50%);
+  transition: -webkit-filter 0.5s ease;
+}
+img.profile-image:hover {
+  -webkit-filter: grayscale(100%);
 }
 @media screen and (min-width:768px) {
   img.profile-image {
